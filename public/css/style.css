@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  background-color: deepskyblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+.sign-up-button {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: white;
+  color: #ff525d;
+}
+.sign-up-button:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.login-button {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: #ff8f70;
+  color: white;
+}
+
+.sign-up-button-mobile {
+  border-radius: 30px;
+  padding: 15px 40px 15px 40px;
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  font-size: 24px;
+  color: white;
+}
+
+.login-button-mobile {
+  border-radius: 30px;
+  padding: 15px 40px 15px 40px;
+  font-size: 24px;
+  color: #25252d;
+}
+
+.top-button-start {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: white;
+  color: #ff525d;
+}
+.top-button-start:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.top-button-learn {
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: #ff525d;
+  color: white;
+  border: solid 1px white;
+}
+.top-button-learn:hover {
+  color: #ff525d;
+  background-color: white;
+}
+
+.select-button-desktop {
+  font-weight: normal;
+  color: white;
+}
+.select-button-desktop:hover {
+  text-decoration: underline;
+}
+
+.select-button-mobile {
+  font-size: 24px;
+  color: #25252d;
+}
+
+/*# sourceMappingURL=style.css.map */

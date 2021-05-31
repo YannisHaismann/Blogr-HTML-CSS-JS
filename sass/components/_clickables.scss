@@ -1,0 +1,59 @@
+//BUTTONS
+//DESKTOP
+.sign-up-button{
+  @include size-top-buttons;
+  background-color: $white;
+  color: $light-red;
+  &:hover{
+    background-color: $very-light-red;
+    color: $white;
+  }
+}
+.login-button{
+  @include size-top-buttons;
+  background-color: $backgound-very-light-red;
+  color: $white;
+}
+//MOBILE
+.sign-up-button-mobile{
+  @include size-top-buttons-mobile;
+  background: linear-gradient(to right, $backgound-very-light-red, $background-light-red);
+  font-size: 24px;
+  color: white;
+}
+.login-button-mobile{
+  @include size-top-buttons-mobile;
+  font-size: 24px;
+  color: $very-dark-black-blue;
+}
+//...
+.top-button-start{
+  @include size-top-buttons;
+  background-color: $white;
+  color: $light-red;
+  &:hover{
+    background-color: $very-light-red;
+    color: $white;
+  }
+}
+.top-button-learn{
+  @include size-top-buttons;
+  background-color: $light-red;
+  color: $white;
+  border: solid 1px $white;
+  &:hover{
+    color: $light-red;
+    background-color: $white;
+  }
+}
+.select-button-desktop{
+  font-weight: normal;
+  color: $white;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.select-button-mobile{
+  font-size: 24px;
+  color: $very-dark-black-blue;
+}
