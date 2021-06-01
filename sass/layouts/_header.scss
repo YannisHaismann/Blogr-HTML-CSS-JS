@@ -1,0 +1,52 @@
+header{
+  border: solid 2px black;
+  padding: 30px;
+  display: grid;
+  & > nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    & > h1.title-page{
+      grid-column: 1;
+      text-align: center;
+      color: $white;
+    }
+    & > div.desktop-header{
+      grid-column: span 4;
+    }
+  }
+}
+//DESKTOP
+.desktop-header{
+  @media (max-width: $mobile) {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  & > .nav-header{
+    display: flex;
+  }
+}
+.nav-header-product, .nav-header-company, .nav-header-contact{
+  margin-right: 30px;
+  & > ol{
+    position: relative;
+    z-index: 20;
+    display: none;
+    background-color: $white;
+    border-radius: 5px;
+    padding: 20px;
+    & > li{
+      padding: 5px 10px 5px 10px;
+    }
+  }
+}
+
+//MOBILE
+.mobile, .mobile-nav-button{
+  display: none;
+  @media (max-width: $mobile){
+    display: flex;
+  }
+}

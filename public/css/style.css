@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.invisible-layer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 124, 0.4);
+  z-index: 10;
+  position: absolute;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   background-color: deepskyblue;
+  margin: 0px;
 }
 
 a {
@@ -85,6 +95,63 @@ body {
 .select-button-mobile {
   font-size: 24px;
   color: #25252d;
+}
+
+header {
+  border: solid 2px black;
+  padding: 30px;
+  display: grid;
+}
+header > nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+header > nav > h1.title-page {
+  grid-column: 1;
+  text-align: center;
+  color: white;
+}
+header > nav > div.desktop-header {
+  grid-column: span 4;
+}
+
+.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+@media (max-width: 375px) {
+  .desktop-header {
+    display: none;
+  }
+}
+.desktop-header > .nav-header {
+  display: flex;
+}
+
+.nav-header-product, .nav-header-company, .nav-header-contact {
+  margin-right: 30px;
+}
+.nav-header-product > ol, .nav-header-company > ol, .nav-header-contact > ol {
+  position: relative;
+  z-index: 20;
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+.nav-header-product > ol > li, .nav-header-company > ol > li, .nav-header-contact > ol > li {
+  padding: 5px 10px 5px 10px;
+}
+
+.mobile, .mobile-nav-button {
+  display: none;
+}
+@media (max-width: 375px) {
+  .mobile, .mobile-nav-button {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
