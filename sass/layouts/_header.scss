@@ -1,12 +1,19 @@
+//REGLES GENERALES
 header{
-  border: solid 2px black;
-  padding: 30px;
+  background: url("../img/bg-pattern-intro.svg"), linear-gradient(to right, $backgound-very-light-red, $background-light-red);
+  padding: 0px 30px 200px 30px;
+  background-position: top -1600px left 20%, top;
+  background-size: 200%, 100%;
   display: grid;
+  border-bottom-left-radius: 50px;
   & > nav{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     & > h1.title-page{
+      margin-top: 10px;
+      font-size: 32px;
       grid-column: 1;
       text-align: center;
       color: $white;
@@ -15,38 +22,103 @@ header{
       grid-column: span 4;
     }
   }
+
+
 }
+//FIN REGLES GENERALES
+
+
 //DESKTOP
-.desktop-header{
-  @media (max-width: $mobile) {
+@media (min-width: $mobile) {
+
+  .mobile, .mobile-nav-button{
     display: none;
   }
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  & > .nav-header{
+
+  .desktop-header{
     display: flex;
-  }
-}
-.nav-header-product, .nav-header-company, .nav-header-contact{
-  margin-right: 30px;
-  & > ol{
-    position: relative;
-    z-index: 20;
-    display: none;
-    background-color: $white;
-    border-radius: 5px;
-    padding: 20px;
-    & > li{
-      padding: 5px 10px 5px 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    & > .nav-header{
+      display: flex;
+    }
+    & > .login{
+      margin-right: 50px;
+      & > .login-button {
+        margin-right: 5px;
+      }
     }
   }
+
+  .nav-header-product, .nav-header-company, .nav-header-contact{
+     margin-right: 30px;
+     & > ol{
+       position: absolute;
+       z-index: 20;
+       display: none;
+       background-color: $white;
+       border-radius: 5px;
+       padding: 20px;
+       & > li{
+         padding: 5px 10px 5px 10px;
+       }
+     }
+   }
+
+
+  .head-content{
+    display: grid;
+    text-align: center;
+    color: $white;
+    margin-top: 40px;
+    & > h2{
+      font-size: 48px;
+      margin-bottom: 0px;
+    }
+    & > p{
+      font-size: 16px;
+    }
+  }
+
+  .header-buttons{
+    text-align: center;
+    margin-top: 40px;
+    & > a{
+      margin: 5px;
+    }
+  }
+
+
 }
+//FIN DESKTOP
+
+
+//(Transition) -> DESKTOP - MOBILE
+@media (max-width: 1224px) {
+
+  .desktop-header{
+    & > .login{
+      margin-right: 30px;
+    }
+  }
+
+
+}
+//FIN (Transition)
+
 
 //MOBILE
-.mobile, .mobile-nav-button{
-  display: none;
-  @media (max-width: $mobile){
-    display: flex;
+@media (max-width: $mobile){
+
+  .desktop-header{
+    display: none;
   }
+
+  .mobile, .mobile-nav-button{
+    display: block;
+  }
+
+
 }
+//FIN MOBILE
+

@@ -98,16 +98,22 @@ body {
 }
 
 header {
-  border: solid 2px black;
-  padding: 30px;
+  background: url("../img/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
+  padding: 0px 30px 200px 30px;
+  background-position: top -1600px left 20%, top;
+  background-size: 200%, 100%;
   display: grid;
+  border-bottom-left-radius: 50px;
 }
 header > nav {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 header > nav > h1.title-page {
+  margin-top: 10px;
+  font-size: 32px;
   grid-column: 1;
   text-align: center;
   color: white;
@@ -116,41 +122,75 @@ header > nav > div.desktop-header {
   grid-column: span 4;
 }
 
-.desktop-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+@media (min-width: 772px) {
+  .mobile, .mobile-nav-button {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .desktop-header > .nav-header {
+    display: flex;
+  }
+  .desktop-header > .login {
+    margin-right: 50px;
+  }
+  .desktop-header > .login > .login-button {
+    margin-right: 5px;
+  }
+
+  .nav-header-product, .nav-header-company, .nav-header-contact {
+    margin-right: 30px;
+  }
+  .nav-header-product > ol, .nav-header-company > ol, .nav-header-contact > ol {
+    position: absolute;
+    z-index: 20;
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .nav-header-product > ol > li, .nav-header-company > ol > li, .nav-header-contact > ol > li {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .head-content {
+    display: grid;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+  }
+  .head-content > h2 {
+    font-size: 48px;
+    margin-bottom: 0px;
+  }
+  .head-content > p {
+    font-size: 16px;
+  }
+
+  .header-buttons {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .header-buttons > a {
+    margin: 5px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 1224px) {
+  .desktop-header > .login {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 772px) {
   .desktop-header {
     display: none;
   }
-}
-.desktop-header > .nav-header {
-  display: flex;
-}
 
-.nav-header-product, .nav-header-company, .nav-header-contact {
-  margin-right: 30px;
-}
-.nav-header-product > ol, .nav-header-company > ol, .nav-header-contact > ol {
-  position: relative;
-  z-index: 20;
-  display: none;
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-}
-.nav-header-product > ol > li, .nav-header-company > ol > li, .nav-header-contact > ol > li {
-  padding: 5px 10px 5px 10px;
-}
-
-.mobile, .mobile-nav-button {
-  display: none;
-}
-@media (max-width: 375px) {
   .mobile, .mobile-nav-button {
-    display: flex;
+    display: block;
   }
 }
 
