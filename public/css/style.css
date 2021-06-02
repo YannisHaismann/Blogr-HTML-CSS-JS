@@ -10,8 +10,8 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
+  font-family: "Ubuntu", "Overpass";
+  font-weight: 900;
   background-color: deepskyblue;
   margin: 0px;
 }
@@ -61,29 +61,54 @@ body {
   color: #25252d;
 }
 
-.top-button-start {
-  border-radius: 20px;
-  padding: 10px 30px 10px 30px;
-  background-color: white;
-  color: #ff525d;
-}
-.top-button-start:hover {
-  background-color: #ff7a85;
-  color: white;
-}
+@media (min-width: 772px) {
+  .top-button-start {
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: #ff525d;
+  }
+  .top-button-start:hover {
+    background-color: #ff7a85;
+    color: white;
+  }
 
-.top-button-learn {
-  border-radius: 20px;
-  padding: 10px 30px 10px 30px;
-  background-color: #ff525d;
-  color: white;
-  border: solid 1px white;
+  .top-button-learn {
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: #ff525d;
+    color: white;
+    border: solid 1px white;
+  }
+  .top-button-learn:hover {
+    color: #ff525d;
+    background-color: white;
+  }
 }
-.top-button-learn:hover {
-  color: #ff525d;
-  background-color: white;
-}
+@media (max-width: 772px) {
+  .top-button-start {
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    color: #ff525d;
+  }
+  .top-button-start:hover {
+    background-color: #ff7a85;
+    color: white;
+  }
 
+  .top-button-learn {
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: #ff525d;
+    color: white;
+    border: solid 1px white;
+  }
+  .top-button-learn:hover {
+    color: #ff525d;
+    background-color: white;
+  }
+}
 .select-button-desktop {
   font-weight: normal;
   color: white;
@@ -105,24 +130,37 @@ header {
   display: grid;
   border-bottom-left-radius: 50px;
 }
-header > nav {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-}
 header > nav > h1.title-page {
-  margin-top: 10px;
   font-size: 32px;
-  grid-column: 1;
-  text-align: center;
   color: white;
 }
-header > nav > div.desktop-header {
-  grid-column: span 4;
+
+.head-content {
+  color: white;
 }
 
 @media (min-width: 772px) {
+  header {
+    display: grid;
+    border-bottom-left-radius: 50px;
+  }
+  header > nav {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  header > nav > h1.title-page {
+    margin-top: 10px;
+    font-size: 32px;
+    grid-column: 1;
+    text-align: center;
+    color: white;
+  }
+  header > nav > div.desktop-header {
+    grid-column: span 4;
+  }
+
   .mobile, .mobile-nav-button {
     display: none;
   }
@@ -160,12 +198,11 @@ header > nav > div.desktop-header {
   .head-content {
     display: grid;
     text-align: center;
-    color: white;
     margin-top: 40px;
   }
   .head-content > h2 {
-    font-size: 48px;
     margin-bottom: 0px;
+    font-size: 48px;
   }
   .head-content > p {
     font-size: 16px;
@@ -189,9 +226,48 @@ header > nav > div.desktop-header {
     display: none;
   }
 
-  .mobile, .mobile-nav-button {
+  .mobile {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    top: 120px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .mobile-nav-button {
     display: block;
   }
+  .mobile-nav-button > img {
+    margin-top: 40px;
+  }
+  .mobile-nav-button > .mobile-nav-button__close {
+    display: none;
+  }
+
+  .head-content {
+    text-align: center;
+  }
+  .head-content > h2 {
+    font-size: 32px;
+  }
+
+  .header-buttons {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .header-buttons > a {
+    margin: 10px;
+  }
+}
+.content {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

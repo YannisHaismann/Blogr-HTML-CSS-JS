@@ -3,7 +3,12 @@
   padding: 10px 30px 10px 30px;
 }
 
-@mixin size-top-buttons-mobile{
+@mixin size-top-buttons-mobile {
   border-radius: 30px;
   padding: 15px 40px 15px 40px;
+}
+
+@mixin header-under-h2-buttons{
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
 }

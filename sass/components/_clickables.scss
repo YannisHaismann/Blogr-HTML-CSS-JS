@@ -26,26 +26,53 @@
   font-size: 24px;
   color: $very-dark-black-blue;
 }
-//...
-.top-button-start{
-  @include size-top-buttons;
-  background-color: $white;
-  color: $light-red;
-  &:hover{
-    background-color: $very-light-red;
-    color: $white;
-  }
-}
-.top-button-learn{
-  @include size-top-buttons;
-  background-color: $light-red;
-  color: $white;
-  border: solid 1px $white;
-  &:hover{
-    color: $light-red;
+
+//DESKTOP
+@media (min-width: $mobile) {
+  .top-button-start{
+    @include size-top-buttons;
     background-color: $white;
+    color: $light-red;
+    &:hover{
+      background-color: $very-light-red;
+      color: $white;
+    }
+  }
+  .top-button-learn{
+    @include size-top-buttons;
+    background-color: $light-red;
+    color: $white;
+    border: solid 1px $white;
+    &:hover{
+      color: $light-red;
+      background-color: $white;
+    }
   }
 }
+
+//MOBILE
+@media (max-width: $mobile) {
+  .top-button-start{
+    @include header-under-h2-buttons;
+    background-color: $white;
+    color: $light-red;
+    &:hover{
+      background-color: $very-light-red;
+      color: $white;
+    }
+  }
+  .top-button-learn{
+    @include header-under-h2-buttons;
+    background-color: $light-red;
+    color: $white;
+    border: solid 1px $white;
+    &:hover{
+      color: $light-red;
+      background-color: $white;
+    }
+  }
+}
+
 .select-button-desktop{
   font-weight: normal;
   color: $white;
