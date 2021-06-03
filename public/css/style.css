@@ -319,46 +319,86 @@ header > nav > h1.title-page {
     margin: 10px;
   }
 }
-.intro {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 15% 30% 30% 15%;
-  color: #1f3f5b;
-  padding: 100px 0px 0px 0px;
-  height: 1100px;
-}
-.intro > h3 {
-  grid-row: 1;
-  grid-column: 1/9;
-  margin-bottom: 100px;
-  text-align: center;
-  font-size: 32px;
-  z-index: 5;
-}
+@media (min-width: 772px) {
+  .intro-img__mobile {
+    display: none;
+  }
 
-.intro-content {
-  grid-row: 2/4;
-  grid-column: 1/5;
-  height: 100%;
-  margin-left: 100px;
-}
-.intro-content__part1 > h4, .intro-content__part2 > h4 {
-  font-size: 24px;
-}
-.intro-content__part1 > p, .intro-content__part2 > p {
-  color: gray;
-  line-height: 1.8em;
-}
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 15% 30% 30% 15%;
+    color: #1f3f5b;
+    padding: 100px 0px 0px 0px;
+    height: 1100px;
+  }
+  .intro > h3 {
+    grid-row: 1;
+    grid-column: 1/9;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 32px;
+    z-index: 5;
+  }
 
-.intro-img {
-  grid-row: 1/5;
-  grid-column: 5/9;
-  overflow: hidden;
+  .intro-content {
+    grid-row: 2/4;
+    grid-column: 1/5;
+    height: 100%;
+    margin-left: 100px;
+  }
+  .intro-content__part1 > h4, .intro-content__part2 > h4 {
+    font-size: 24px;
+  }
+  .intro-content__part1 > p, .intro-content__part2 > p {
+    color: gray;
+    line-height: 1.8em;
+  }
+
+  .intro-img {
+    grid-row: 1/5;
+    grid-column: 5/9;
+    overflow: hidden;
+  }
+  .intro-img__desktop {
+    margin-left: 10%;
+    position: relative;
+    top: 0;
+  }
 }
-.intro-img > img {
-  margin-left: 10%;
-  position: relative;
-  top: 0;
+@media (max-width: 772px) {
+  .intro-img__desktop {
+    display: none;
+  }
+
+  .intro {
+    margin-top: 50px;
+    color: #1f3f5b;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .title-top-content {
+    order: 1;
+    width: 100%;
+  }
+
+  .intro-content {
+    order: 3;
+  }
+  .intro-content__part1 > p, .intro-content__part2 > p {
+    margin: 0px 100px 0px 100px;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.8em;
+  }
+
+  .intro-img {
+    order: 2;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
