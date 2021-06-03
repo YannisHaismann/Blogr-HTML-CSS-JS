@@ -1,3 +1,4 @@
+Finir de cadrer l image des tels
 mobile version of top content
 Changer le sens des petites arrows dans le header when onclick
 animation ouverture des a headers
