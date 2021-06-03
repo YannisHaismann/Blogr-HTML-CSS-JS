@@ -1,0 +1,42 @@
+.intro{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 15% 30% 30% 15%;
+  color: $very-dark-blue;
+  padding: 100px 0px 0px 0px;
+  height: 1100px;
+  & > h3{
+    grid-row: 1;
+    grid-column: 1 / 9;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 32px;
+    z-index: 5;
+  }
+}
+
+.intro-content{
+  grid-row: 2 / 4;
+  grid-column: 1 / 5;
+  height: 100%;
+  margin-left: 100px;
+  &__part1, &__part2{
+    & > h4{
+      font-size: 24px;
+    }
+    & > p{
+      color: gray;
+      line-height: 1.8em;
+    }
+  }
+}
+.intro-img{
+  grid-row: 1 / 5;
+  grid-column: 5 / 9;
+  overflow: hidden;
+  & > img{
+    margin-left: 10%;
+    position: relative;
+    top: 0;
+  }
+}

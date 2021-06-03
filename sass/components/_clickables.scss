@@ -73,6 +73,13 @@
   }
 }
 
+.mobile-nav-button{
+  &__close{
+    position: relative;
+    z-index: 20;
+  }
+}
+
 .select-button-desktop{
   font-weight: normal;
   color: $white;

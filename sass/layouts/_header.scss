@@ -77,6 +77,9 @@ header {
        padding: 20px;
        & > li{
          padding: 5px 10px 5px 10px;
+         & > a {
+           color: $very-dark-blue;
+         }
        }
      }
    }
@@ -128,13 +131,50 @@ header {
   .desktop-header{
     display: none;
   }
+  .mobile-list-product, .mobile-list-company, .mobile-list-contact{
+    display: none;
+    background-color: lighten(lightgray, 10);
+    border-radius: 5px;
+    margin: 20px 10% 10px 10%;
+    padding-left: 0px;
+    & > li {
+      padding: 15px 0px 15px 0px;
+      & > a{
+        color: $very-dark-grayish-blue;
+      }
+
+    }
+  }
+
   .mobile{
-    display: block;
+    display: none;
     position: absolute;
+    z-index: 20;
     background-color: $white;
-    border-radius: 10px;
-    width: 90%;
+    border-radius: 5px;
+    width: 85%;
     top: 120px;
+    height: auto;
+    &__hr{
+      margin: 0px 10% 0px 10%;
+      color: lighten(lightgray, 100);
+    }
+    & > .login{
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      & > a{
+        text-align: center;
+        width: 100px;
+        margin: 0px auto 15px;
+      }
+    }
+    & > .nav {
+      text-align: center;
+      > div{
+        margin: 20px 10px 30px 10px;
+      }
+    }
   }
 
   nav{
@@ -171,8 +211,4 @@ header {
 
 }
 //FIN MOBILE
-
-.content{
-  display: none;
-}
 

@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="invisible-layer"></div>
+<div class="invisible-layer2"></div>
     <header>
         <nav>
             <h1 class="title-page">Blogr</h1>
@@ -15,25 +16,25 @@
                 <div class="nav-header-product">
                     <a href="#" class="nav-header-product__title"><em class="select-button-desktop">Product</em><img src="public/img/icon-arrow-light.svg" alt="arrow" title="arrow"></a>
                     <ol id="js-visible-product" class="nav-header-product__list">
-                        <li>Vip pigeon</li>
-                        <li>Super vip pigeon</li>
-                        <li>Pigeon utime</li>
+                        <li><a href="#">Produit 1</a></li>
+                        <li><a href="#">Produit 2</a></li>
+                        <li><a href="#">Produit 3</a></li>
                     </ol>
                 </div>
                 <div class="nav-header-company">
                     <a href="#" class="nav-header-company__title"><em class="select-button-desktop">Company</em><img src="public/img/icon-arrow-light.svg" alt="arrow" title="arrow"></a>
                     <ol id="js-visible-company" class="nav-header-company__list">
-                        <li>Notre histoire</li>
-                        <li>L'équipe</li>
-                        <li>Nos partenaires</li>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">L'équipe</a></li>
+                        <li><a href="#">Nos partenaires</a></li>
                     </ol>
                 </div>
                 <div class="nav-header-contact">
                     <a href="#" class="nav-header-contact__title"><em class="select-button-desktop">Contact</em><img src="public/img/icon-arrow-light.svg" alt="arrow" title="arrow"></a>
                     <ol id="js-visible-contact" class="nav-header-contact__list">
-                        <li>Contact</li>
-                        <li>Newsletter</li>
-                        <li>Linkedin</li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Linkedin</a></li>
                     </ol>
                 </div>
             </div>
@@ -49,30 +50,31 @@
             <div class="mobile">
                 <div class="nav">
                     <div class="product">
-                        <a href="#"><em class="select-button-mobile">Product</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
-                        <ol>
-                            <li>Vip pigeon</li>
-                            <li>Super vip pigeon</li>
-                            <li>Pigeon utime</li>
+                        <a href="#"><em class="select-button-mobile js-mobile-product-title">Product</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
+                        <ol class="mobile-list-product js-mobile-product-list">
+                            <li><a href="#">Produit 1</a></li>
+                            <li><a href="#">Produit 2</a></li>
+                            <li><a href="#">Produit 3</a></li>
                         </ol>
                     </div>
                     <div class="company">
-                        <a href="#"><em class="select-button-mobile">Company</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
-                        <ol>
-                            <li>Notre histoire</li>
-                            <li>L'équipe</li>
-                            <li>Nos partenaires</li>
+                        <a href="#"><em class="select-button-mobile js-mobile-company-title">Company</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
+                        <ol class="mobile-list-company js-mobile-company-list">
+                            <li><a href="#">Notre histoire</a></li>
+                            <li><a href="#">L'équipe</a></li>
+                            <li><a href="#">Nos partenaires</a></li>
                         </ol>
                     </div>
                     <div class="contact">
-                        <a href="#"><em class="select-button-mobile">Contact</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
-                        <ol>
-                            <li>Contact</li>
-                            <li>Newsletter</li>
-                            <li>Linkedin</li>
+                        <a href="#"><em class="select-button-mobile js-mobile-contact-title">Contact</em><img src="public/img/icon-arrow-dark.svg" alt="arrow" title="arrow"></a>
+                        <ol class="mobile-list-contact js-mobile-contact-list">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Linkedin</a></li>
                         </ol>
                     </div>
                 </div>
+                <hr class="mobile__hr">
                 <div class="login">
                     <a href="#" class="login-button-mobile">Login</a>
                     <a href="#" class="sign-up-button-mobile">Sign Up</a>
@@ -91,7 +93,7 @@
 
     <div class="content">
         <div class="intro">
-             <h3>Designed for the future</h3>
+             <h3 class="title-top-content">Designed for the future</h3>
              <div class="intro-content">
                 <div class="intro-content__part1">
                     <h4>Introducing an extensible editor</h4>
@@ -108,7 +110,9 @@
                          categories, sections, format, or flow. With this functionnality, you're in full control.
                      </p>
                  </div>
-                 <img src="public/img/illustration-editor-desktop.svg" alt="illustrator editor desktop" title="illustrator editor desktop">
+             </div>
+             <div class="intro-img">
+                 <img src="public/img/illustration-editor-desktop.svg">
              </div>
          </div>
         <div class="mobile">
@@ -124,7 +128,6 @@
 
         </div>
         <div class="laptop">
-            <img src="public/img/illustration-laptop-desktop.svg" alt="laptop" title="laptop">
             <div class="text">
                 <div class="text__part1">
                     <h4>Free, open, simple</h4>
