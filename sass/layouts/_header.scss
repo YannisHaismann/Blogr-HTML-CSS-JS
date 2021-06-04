@@ -6,12 +6,6 @@ header {
   background-size: 200%, 100%;
   display: grid;
   border-bottom-left-radius: 50px;
-  & > nav {
-    & > h1.title-page {
-      font-size: 32px;
-      color: $white;
-    }
-  }
 }
 
 .head-content{
@@ -33,12 +27,9 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
 
-      & > h1.title-page {
-        margin-top: 10px;
-        font-size: 32px;
+      & > img.title-page {
         grid-column: 1;
-        text-align: center;
-        color: $white;
+        margin: 10px auto 0px auto;
       }
 
       & > div.desktop-header {
@@ -131,6 +122,11 @@ header {
   .desktop-header{
     display: none;
   }
+
+  img.title-page{
+    margin-top: 28px;
+  }
+
   .mobile-list-product, .mobile-list-company, .mobile-list-contact{
     display: none;
     background-color: lighten(lightgray, 10);
@@ -181,6 +177,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    margin-bottom: 40px;
   }
 
   .mobile-nav-button{
