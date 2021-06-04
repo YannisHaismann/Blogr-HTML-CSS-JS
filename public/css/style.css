@@ -169,7 +169,7 @@ header {
   }
 
   .mobile, .mobile-nav-button {
-    display: none;
+    display: none !important;
   }
 
   .desktop-header {
