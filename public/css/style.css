@@ -573,5 +573,33 @@ header {
     margin-left: -45%;
   }
 }
+@media (max-width: 772px) {
+  .laptop-content__img-desktop {
+    display: none;
+  }
+
+  .laptop-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .laptop-content__text {
+    margin: 50px;
+    color: #1f3f5b;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: center;
+  }
+  .laptop-content__text__part1 > p, .laptop-content__text__part2 > p {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.8em;
+  }
+
+  .laptop-content__img {
+    margin: 30px auto 0px auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

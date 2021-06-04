@@ -60,5 +60,32 @@
 
 
 @media (max-width: $mobile) {
-  
+  .laptop-content__img-desktop{
+    display: none;
+  }
+
+  .laptop-content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .laptop-content__text{
+    margin: 50px;
+    color: $very-dark-blue;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: center;
+    &__part1, &__part2{
+      & > p {
+        font-size: 16px;
+        color: gray;
+        line-height: 1.8em;
+      }
+    }
+  }
+
+  .laptop-content__img{
+    margin: 30px auto 0px auto;
+  }
 }
