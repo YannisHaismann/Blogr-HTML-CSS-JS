@@ -88,3 +88,13 @@
   }
 
 }
+
+@media (max-width: 500px) {
+  .intro-content{
+    &__part1, &__part2{
+      & > p{
+        margin: 0px 20px 0px 20px;
+      }
+    }
+  }
+}

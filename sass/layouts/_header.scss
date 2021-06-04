@@ -119,6 +119,10 @@ header {
 //MOBILE
 @media (max-width: $mobile){
 
+  header{
+    padding-bottom: 100px;
+  }
+
   .desktop-header{
     display: none;
   }
@@ -198,8 +202,9 @@ header {
   }
 
   .header-buttons{
-    margin-top: 50px;
-    text-align: center;
+    margin: 50px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
     & > a{
       margin: 10px;
     }
